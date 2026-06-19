@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gondigzia08.github.io/portal-index-leyusports-com-cn/sitemap.xml
