@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料索引 · V体育 知识库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: #1f2a3f;
+            padding: 2rem 1rem 3rem;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.8rem 2rem 3.2rem;
+            border-radius: 24px;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-weight: 540;
+            font-size: 2.2rem;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.25rem;
+            color: #0d1829;
+            line-height: 1.2;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #58647a;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e9ecf2;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-weight: 520;
+            font-size: 1.25rem;
+            margin-top: 2.4rem;
+            margin-bottom: 0.9rem;
+            color: #121e33;
+            letter-spacing: -0.005em;
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-top: 1.6rem;
+            margin-bottom: 0.4rem;
+            color: #1c2a44;
+        }
+
+        p {
+            margin-bottom: 1.1rem;
+            color: #2c3850;
+        }
+
+        a {
+            color: #1a4e7a;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.15s;
+        }
+
+        a:hover {
+            border-bottom-color: #1a4e7a;
+            color: #0a2f4d;
+        }
+
+        .index-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin: 1.8rem 0 1.2rem;
+        }
+
+        .index-item {
+            display: flex;
+            align-items: baseline;
+            padding: 0.45rem 0 0.45rem 0.75rem;
+            border-left: 3px solid #d8dee8;
+            transition: border-color 0.15s, background 0.1s;
+            font-size: 0.98rem;
+        }
+
+        .index-item:hover {
+            border-left-color: #1a4e7a;
+            background: #f7f9fd;
+        }
+
+        .index-item span {
+            display: inline-block;
+            min-width: 1.8rem;
+            font-size: 0.8rem;
+            color: #7a88a0;
+            font-weight: 420;
+            margin-right: 0.6rem;
+        }
+
+        .card-note {
+            background: #f0f3f8;
+            border-radius: 14px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.8rem 0;
+        }
+
+        .card-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 0.8rem;
+            margin: 1.2rem 0 0.4rem;
+        }
+
+        .tag {
+            background: #e7ecf4;
+            color: #1f3455;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.85rem;
+            border-radius: 30px;
+            letter-spacing: 0.01em;
+            font-weight: 430;
+        }
+
+        .faq-mini {
+            margin: 2rem 0 1.4rem;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+            color: #0b1d36;
+        }
+
+        .faq-q + p {
+            margin-top: 0.1rem;
+            color: #40516b;
+            font-size: 0.95rem;
+        }
+
+        .info-meta {
+            color: #6a7892;
+            font-size: 0.85rem;
+            margin-top: 2.6rem;
+            padding-top: 1.4rem;
+            border-top: 1px solid #e0e5ed;
+        }
+
+        @media (max-width: 540px) {
+            body {
+                padding: 0.8rem 0.6rem;
+            }
+            .container {
+                padding: 2rem 1.2rem;
+                border-radius: 18px;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            .subhead {
+                font-size: 0.92rem;
+                margin-bottom: 1.8rem;
+            }
+            .index-item {
+                padding-left: 0.5rem;
+                font-size: 0.92rem;
+            }
+            .card-note {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>资料索引 · V体育</h1>
+        <div class="subhead">整理、归类与信息锚点</div>
+
+        <p>
+            这个页面相当于一份轻量的知识库入口，围绕 <a href="https://cnweb-vtiyu.com">V体育</a> 汇集若干资料方向。不追求面面俱到，而是将常见的信息模块拆解为几个可索引的区块，便于快速定位和初步了解。以下内容基于公开资料与通用体育信息架构整理，仅作结构参考。
+        </p>
+
+        <h2>📁 索引目录</h2>
+        <div class="index-grid">
+            <div class="index-item"><span>01</span> 平台背景与定位</div>
+            <div class="index-item"><span>02</span> 体育项目覆盖范围</div>
+            <div class="index-item"><span>03</span> 数据呈现与赛事信息流</div>
+            <div class="index-item"><span>04</span> 用户界面与交互习惯</div>
+            <div class="index-item"><span>05</span> 辅助功能与提示系统</div>
+            <div class="index-item"><span>06</span> 相关协议与信息说明</div>
+        </div>
+
+        <h2>🔍 说明区</h2>
+        <p>
+            对一个体育信息平台而言，资料整理的起点往往是确认其内容边界：哪些联赛、哪些运动项目、哪些数据维度被纳入。从已有信息来看，<a href="https://cnweb-vtiyu.com">V体育</a> 覆盖的赛事类型包括主流团队运动与部分个人项目，数据更新节奏与赛事日程基本同步。页面结构上，赛事卡片、积分榜、近期赛果是常见的信息单元，而筛选与排序功能则帮助用户缩小关注范围。
+        </p>
+        <p>
+            对于新用户而言，建议先浏览“热门赛事”或“今日赛程”模块，这通常是信息密度最高的区域。收藏或关注特定队伍后，首页的推荐逻辑会有所调整——这类个性化机制在多数体育平台中已成为默认配置。
+        </p>
+
+        <h2>💡 提示区</h2>
+        <div class="card-note">
+            <p>
+                <strong>• 数据延迟说明</strong>：体育比赛的数据（比分、统计、事件）通常存在数秒至数分钟的延迟，具体取决于数据源与刷新策略。实时直播类信息请以官方信号为准。
+            </p>
+            <p>
+                <strong>• 信息筛选建议</strong>：当同时关注多个联赛时，利用“关注列表”或“自定义面板”可以有效减少信息噪音。大部分体育平台都支持按联赛、日期、队伍进行过滤。
+            </p>
+            <p>
+                <strong>• 版本与更新</strong>：移动端与桌面端的布局差异较大，功能入口位置也有所不同。如果找不到某个功能，尝试搜索或查阅平台内置的帮助文档。
+            </p>
+        </div>
+
+        <div class="tag-list">
+            <span class="tag">资料整理</span>
+            <span class="tag">目录结构</span>
+            <span class="tag">体育信息</span>
+            <span class="tag">索引参考</span>
+        </div>
+
+        <h2>📎 相关信息区</h2>
+        <p>
+            以下列举几个与体育信息平台相关的常见话题，它们通常出现在 FAQ 或帮助中心内，此处以摘要形式呈现。
+        </p>
+
+        <div class="faq-mini">
+            <div class="faq-q">⚙️ 数据来源与可信度</div>
+            <p>多数体育信息平台的数据来源于官方统计机构或授权数据提供商。不同联赛的数据覆盖深度不同，次级联赛或杯赛可能存在信息缺失。建议核对至少两个信源。</p>
+
+            <div class="faq-q">📱 多设备同步</div>
+            <p>登录同一账户后，关注列表、浏览记录通常可在设备间同步。部分平台支持跨平台收藏夹共享，但历史搜索记录可能独立存储。</p>
+
+            <div class="faq-q">🧩 内容版权与转载</div>
+            <p>赛事文字直播、比分动画、图片等素材受到版权保护。个人引用或分享时，建议注明出处并遵守平台服务条款。关于 <a href="https://cnweb-vtiyu.com">V体育</a> 的具体授权范围，请查阅其相关页面说明。</p>
+        </div>
+
+        <h3>延伸方向</h3>
+        <p>
+            如果对资料索引本身感兴趣，还可以关注：信息架构中的分类粒度、体育数据的可视化方式、多语言环境下的术语统一。这些话题虽不直接涉及具体平台，但有助于理解体育信息产品的底层逻辑。
+        </p>
+
+        <div class="info-meta">
+            本页为知识库入口式索引 · 内容基于通用体育信息框架整理 · 不构成任何推荐或保证
+        </div>
+    </div>
+</body>
+</html>
